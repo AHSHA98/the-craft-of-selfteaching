@@ -286,7 +286,7 @@ print('X' not in b_list)
 
 ### Methods
 
-字符串常量和 range() 都是不可变的（Imutable）；而列表则是**可变类型**（Mutable type），所以，它最起码可以被排序 —— 使用 `sort()` Method：
+字符串常量和 range() 都是不可变的（Immutable）；而列表则是**可变类型**（Mutable type），所以，它最起码可以被排序 —— 使用 `sort()` Method：
 ```python
 import random
 n = 10 
@@ -511,7 +511,7 @@ print(a_list)
 
 ### 小结
 
-看起来是个新概念，例子全部读完也很是要花上一段时间，然而，从操作上来看，操作列表和操作字符串的差异并不大，重点在于一个是 Immutable，另外一个是 Mutable，所以，例如像 `a.sort()`，`a.remove()` 这样的事儿，列表能做，字符串不能做 —— 字符串也可以排序，但那是排序之后返回给另外一个变量；而列表可以直接改变自身……
+看起来是个新概念，例子全部读完也很是要花上一段时间，然而，从操作上来看，操作列表和操作字符串的差异并不大，重点在于一个是 Immutable，另外一个是 Mutable，所以，例如像 `a.sort()`，`a.remove()` 这样的事，列表能做，字符串不能做 —— 字符串也可以排序，但那是排序之后返回给另外一个变量；而列表可以直接改变自身……
 
 而整理成表格之后呢，理解与记忆真的是零压力：
 
@@ -740,7 +740,7 @@ plt.show()
 
 |   意义    | 操作符 | 方法                    | 方法相当于 |
 | :------: | :----: | :---------------------: | :--: |
-| 并集     | `\|`    | `set.union(*others)`         | `set \| other \| ...` |
+| 并集     | <code>&#124;</code>    | `set.union(*others)`         | <code>set &#124; other &#124; ...</code> |
 | 交集     | `&`    | `set.intersection(*others)` | `set & other & ...` |
 | 差集     | `-`    | `set.difference(*others)` | `set - other - ...` |
 | 对称差集 | `^`    | `set.symmetric_difference(other)` | `set ^ other` |
