@@ -152,7 +152,7 @@ print('The in_dream() function returns:', in_dream())
 
 如果疑惑为什么 `random.randrange(0,10)` 能表示 1/10 的概率，请返回去重新阅读[第一部分中关于布尔值的内容](Part.1.E.2.values-and-their-operators.md)。
 
-另外，在 Python 中，若是需要将某个值于 True 或者 False 进行比较，尤其是在条件语句中，推荐写法是（参见 [PEP8](https://www.python.org/dev/peps/pep-0008/)）：
+另外，在 Python 中，若是需要将某个值与 True 或者 False 进行比较，尤其是在条件语句中，推荐写法是（参见 [PEP8](https://www.python.org/dev/peps/pep-0008/)）：
 ```python
 if condition:
     pass
@@ -288,17 +288,6 @@ print(n, m)
 
 
 函数开始执行的时候，`x` 的值，是由外部代码（即，函数被调用的那一句）传递进来的。即便函数内部的变量名称与外部的变量名称相同，它们也不是同一个变量。
-```python
-# 观察一下名称相同的一个全局变量和局部变量的不同内存地址
-def f(n):
-    return id(n)
-    
-n = 5
-print(id(n))    # 全局变量 n 的内存地址
-print(id(f(n))) # 局部变量 n 的内存地址。
-```
-    4430918896
-    4467206608
 
 
 ## 递归函数三原则
